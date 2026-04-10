@@ -58,80 +58,100 @@
   </div>
 
   <div class="card">
-    <h2>Information We Collect</h2>
-    <p>The Application collects the following categories of Personal Information when you download and use it:</p>
+    <h2>Personal Information We Collect</h2>
+    <p>The Application collects and processes the following categories of Personal Information:</p>
 
-    <h3>Device and Technical Information</h3>
+    <h3>1. Device and Other IDs</h3>
     <ul>
-      <li><strong>Device ID / Other IDs</strong> — a unique identifier associated with your device, used for analytics and ad serving purposes</li>
-      <li><strong>Advertising ID (AD_ID)</strong> — used by AdMob and Google Ad Services for personalized advertising</li>
-      <li><strong>IP Address</strong> — your device Internet Protocol address</li>
-      <li><strong>Operating System</strong> — the OS version used on your mobile device</li>
-      <li><strong>Network State</strong> — network connectivity information (WiFi/mobile data)</li>
-      <li><strong>App interaction data</strong> — how you interact with the app, buttons clicked, features used, time spent</li>
-      <li><strong>Crash logs</strong> — error and crash reports to improve app stability</li>
+      <li>Device ID — a unique identifier associated with your device</li>
+      <li>Advertising ID (AD_ID) — used by AdMob for personalized advertising</li>
+      <li>IP Address — your device Internet Protocol address</li>
     </ul>
 
-    <h3>Files and Media</h3>
+    <h3>2. Photos</h3>
     <ul>
-      <li><strong>Photos</strong> — accessed from your device storage for scanning and PDF conversion</li>
-      <li><strong>Videos</strong> — accessed from your device storage via READ_EXTERNAL_STORAGE permission</li>
-      <li><strong>Voice or Sound Recordings</strong> — may be accessed from device storage via READ_EXTERNAL_STORAGE permission</li>
-      <li><strong>Music Files</strong> — may be accessible via READ_EXTERNAL_STORAGE permission on your device</li>
-      <li><strong>Other Audio Files</strong> — may be accessible via READ_EXTERNAL_STORAGE permission on your device</li>
-      <li><strong>Files and Documents</strong> — accessed from your device storage for importing and converting to PDF</li>
+      <li>Photos are accessed from your device storage via READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE permissions for the purpose of scanning and converting to PDF format</li>
     </ul>
 
-    <h3>Advertising Data</h3>
+    <h3>3. Videos</h3>
     <ul>
-      <li><strong>Ad interaction data</strong> — data collected by AdMob including user interests, ad clicks, and ad impressions</li>
-      <li><strong>Attribution data</strong> — used by Google Ad Services for measuring ad performance</li>
-      <li><strong>Topics</strong> — interest-based topics used by Google Ad Services for relevant advertising</li>
+      <li>Videos may be accessed from your device storage via READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE permissions</li>
     </ul>
 
-    <p>The Application does <strong>not</strong> gather precise location information about your mobile device.</p>
-    <p>The Application does <strong>not</strong> use Artificial Intelligence (AI) technologies to process your data.</p>
+    <h3>4. Voice or Sound Recordings</h3>
+    <ul>
+      <li>Voice or Sound Recordings may be accessed from your device storage via READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE permissions</li>
+    </ul>
+
+    <h3>5. Music Files</h3>
+    <ul>
+      <li>Music files may be accessible from device storage via READ_EXTERNAL_STORAGE permission</li>
+    </ul>
+
+    <h3>6. Other Audio Files</h3>
+    <ul>
+      <li>Other audio files may be accessible from device storage via READ_EXTERNAL_STORAGE permission</li>
+    </ul>
+
+    <h3>7. Files and Documents</h3>
+    <ul>
+      <li>Files and documents are accessed from your device storage for importing and converting to PDF format</li>
+    </ul>
+
+    <h3>8. App Usage and Technical Data</h3>
+    <ul>
+      <li>Operating system and device information</li>
+      <li>Network state and connectivity information</li>
+      <li>App interaction data — buttons clicked, features used, time spent</li>
+      <li>Crash logs and error reports to improve app stability</li>
+      <li>Ad interaction data — ad clicks, impressions, and performance data</li>
+    </ul>
+
+    <p>The Application does <strong>not</strong> collect precise location information.</p>
+    <p>The Application does <strong>not</strong> use Artificial Intelligence (AI) to process your personal data.</p>
   </div>
 
   <div class="card">
     <h2>App Permissions</h2>
-    <p>The Application requests the following permissions to provide its core functionality:</p>
+    <p>The Application requests the following permissions:</p>
     <ul>
-      <li><strong>CAMERA</strong> — Required to scan documents directly using your device camera.</li>
-      <li><strong>READ_EXTERNAL_STORAGE</strong> — Required to import Photos, Videos, Files, Documents, and other media from your device for PDF conversion.</li>
-      <li><strong>WRITE_EXTERNAL_STORAGE</strong> — Required to save converted PDF files to your device storage.</li>
-      <li><strong>READ_MEDIA_IMAGES</strong> — Required to read image files from device storage on newer Android versions.</li>
-      <li><strong>INTERNET</strong> — Required for ad serving and analytics.</li>
-      <li><strong>ACCESS_NETWORK_STATE</strong> — Required to check network connectivity for ad loading.</li>
-      <li><strong>FOREGROUND_SERVICE</strong> — Required for background processing of documents.</li>
-      <li><strong>WAKE_LOCK</strong> — Required to keep the device awake during document processing.</li>
-      <li><strong>ACCESS_ADSERVICES_AD_ID</strong> — Used by Google Ad Services for advertising.</li>
-      <li><strong>ACCESS_ADSERVICES_ATTRIBUTION</strong> — Used by Google Ad Services for measuring ad performance.</li>
-      <li><strong>ACCESS_ADSERVICES_TOPICS</strong> — Used by Google Ad Services for interest-based advertising.</li>
+      <li><strong>CAMERA</strong> — To scan documents using your device camera</li>
+      <li><strong>READ_EXTERNAL_STORAGE</strong> — To import Photos, Videos, Voice Recordings, Files and Documents for PDF conversion</li>
+      <li><strong>WRITE_EXTERNAL_STORAGE</strong> — To save converted PDF files to your device; may also access Photos, Videos, Voice or Sound Recordings</li>
+      <li><strong>READ_MEDIA_IMAGES</strong> — To read image files on newer Android versions</li>
+      <li><strong>INTERNET</strong> — For ad serving and analytics</li>
+      <li><strong>ACCESS_NETWORK_STATE</strong> — To check network connectivity for ad loading</li>
+      <li><strong>FOREGROUND_SERVICE</strong> — For background document processing</li>
+      <li><strong>WAKE_LOCK</strong> — To keep device awake during document processing</li>
+      <li><strong>ACCESS_ADSERVICES_AD_ID</strong> — Used by Google Ad Services for advertising</li>
+      <li><strong>ACCESS_ADSERVICES_ATTRIBUTION</strong> — Used by Google Ad Services for measuring ad performance</li>
+      <li><strong>ACCESS_ADSERVICES_TOPICS</strong> — Used by Google Ad Services for interest-based advertising</li>
     </ul>
-    <p>These permissions are used solely for the stated purposes to provide app functionality and relevant advertising.</p>
   </div>
 
   <div class="card">
-    <h2>Third Party Services</h2>
-    <p>The Application uses the following third-party services which collect data as described in their own Privacy Policies:</p>
+    <h2>Third Party Services and Endpoints</h2>
+    <p>The Application uses the following third-party services. These services may receive data from the Application through their respective network endpoints:</p>
     <ul>
-      <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-      <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob by Google</a></li>
+      <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a> — googleapis.com, gstatic.com, googletagservices.com</li>
+      <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob by Google</a> — googlesyndication.com, doubleclick.net, adtrafficquality.google, googlevideo.com, 2mdn.net</li>
+      <li>Google Fonts — fonts.googleapis.com</li>
+      <li>Ad Traffic Quality — adtrafficquality.google</li>
+      <li>Third-party ad networks — adnxs.com, casalemedia.com and other advertising partners</li>
     </ul>
-    <p>These third-party services may collect Device IDs, Advertising IDs, app usage data, and other information as described in their respective privacy policies.</p>
+    <p>These third-party services collect Device IDs, Advertising IDs, Photos, Videos, Voice or Sound Recordings (via storage permissions), app usage data, and other information as described in their respective privacy policies.</p>
     <p>The Service Provider may disclose your information as required by law, to protect rights or safety, or with trusted service providers who adhere to this privacy policy.</p>
   </div>
 
   <div class="card">
     <h2>Opt-Out Rights</h2>
-    <p>To opt-out of the sharing or selling of your personal data and targeted advertising, users may submit a request by emailing the Data Controller directly at vikasawasthi717 [at] gmail [dot] com with the subject line "Opt-Out Request".</p>
-    <p>You may also opt-out completely by uninstalling the Application using the standard uninstall process on your mobile device.</p>
+    <p>To opt-out of the sharing or selling of your personal data and targeted advertising, users may submit a request by emailing the Data Controller at vikasawasthi717 [at] gmail [dot] com with the subject line "Opt-Out Request".</p>
+    <p>You may also opt-out completely by uninstalling the Application.</p>
   </div>
 
   <div class="card">
     <h2>Data Retention Policy</h2>
-    <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. To request deletion of your data, contact: vikasawasthi717 [at] gmail [dot] com</p>
+    <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. To request deletion, contact: vikasawasthi717 [at] gmail [dot] com</p>
   </div>
 
   <div class="card">
@@ -147,22 +167,21 @@
       <div class="right-item"><strong>Right to Object</strong>Object to processing for certain purposes.</div>
     </div>
     <h3>Legal Basis for Processing</h3>
-    <p>We process your personal data on the following legal bases:</p>
     <ul>
       <li><strong>Legitimate Interests</strong> — To improve app functionality and user experience</li>
       <li><strong>Consent</strong> — For marketing communications and non-essential data collection</li>
       <li><strong>Legal Obligation</strong> — When required by applicable law</li>
     </ul>
     <h3>Data Protection Officer (DPO)</h3>
-    <p>As a small independent developer, a formal DPO has not been appointed. For all data protection inquiries, please contact the Data Controller at vikasawasthi717 [at] gmail [dot] com.</p>
+    <p>As a small independent developer, a formal DPO has not been appointed. For all data protection inquiries contact: vikasawasthi717 [at] gmail [dot] com</p>
     <h3>Right to Lodge a Complaint</h3>
-    <p>You have the right to lodge a complaint with your local data protection supervisory authority. A list of EU supervisory authorities: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank">edpb.europa.eu</a>.</p>
+    <p>You have the right to lodge a complaint with your local data protection supervisory authority. EU supervisory authorities: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank">edpb.europa.eu</a>.</p>
   </div>
 
   <div class="card">
     <span class="badge">CCPA — California Users</span>
     <h2>Your Rights Under CCPA</h2>
-    <p>If you are a resident of California, the California Consumer Privacy Act (CCPA) grants you the following rights:</p>
+    <p>If you are a resident of California, the CCPA grants you the following rights:</p>
     <ul>
       <li><strong>Right to Know</strong> — Know what personal information we collect, use, disclose, and sell.</li>
       <li><strong>Right to Delete</strong> — Request deletion of personal information we have collected.</li>
@@ -172,16 +191,14 @@
     </ul>
     <h3>Do We Sell Personal Data?</h3>
     <p>We do <strong>not sell</strong> your personal information to third parties.</p>
-    <h3>Do We Share Personal Data?</h3>
-    <p>We share limited data with Google Play Services and AdMob solely for operational and advertising purposes.</p>
     <h3>How to Opt-Out</h3>
-    <p>To opt-out of data sharing or targeted advertising, contact: vikasawasthi717 [at] gmail [dot] com with subject "Opt-Out Request". You may also uninstall the Application to stop all data collection.</p>
+    <p>Contact: vikasawasthi717 [at] gmail [dot] com with subject "Opt-Out Request".</p>
   </div>
 
   <div class="card">
     <span class="badge">LGPD — Brazil Users</span>
     <h2>Your Rights Under LGPD</h2>
-    <p>If you are a resident of Brazil, the Lei Geral de Protecao de Dados (LGPD) grants you the following rights:</p>
+    <p>If you are a resident of Brazil, the LGPD grants you the following rights:</p>
     <ul>
       <li>Confirmation of the existence of data processing</li>
       <li>Access to your personal data</li>
@@ -192,13 +209,13 @@
       <li>Information about third parties with whom data is shared</li>
       <li>Revocation of consent at any time</li>
     </ul>
-    <p>To exercise these rights, contact: vikasawasthi717 [at] gmail [dot] com</p>
+    <p>Contact: vikasawasthi717 [at] gmail [dot] com</p>
   </div>
 
   <div class="card">
     <span class="badge">VCDPA — Virginia Users</span>
     <h2>Your Rights Under VCDPA</h2>
-    <p>If you are a resident of Virginia, the Virginia Consumer Data Protection Act (VCDPA) grants you the following rights:</p>
+    <p>If you are a resident of Virginia, the VCDPA grants you the following rights:</p>
     <ul>
       <li><strong>Right to Access</strong> — Confirm whether we process your data and access it.</li>
       <li><strong>Right to Correct</strong> — Correct inaccuracies in your personal data.</li>
@@ -206,7 +223,7 @@
       <li><strong>Right to Data Portability</strong> — Obtain a copy of your data in a portable format.</li>
       <li><strong>Right to Opt-Out</strong> — Opt out of targeted advertising or sale of personal data.</li>
     </ul>
-    <p>To exercise these rights, contact: vikasawasthi717 [at] gmail [dot] com</p>
+    <p>Contact: vikasawasthi717 [at] gmail [dot] com</p>
   </div>
 
   <div class="card">
@@ -227,7 +244,6 @@
 
   <div class="card">
     <h2>Contact Us</h2>
-    <p>For any questions or concerns regarding this Privacy Policy:</p>
     <div class="contact-box">
       <p><strong>Developer / Data Controller:</strong> Vikas Awasthi</p>
       <p><strong>App:</strong> PdfScanner</p>
