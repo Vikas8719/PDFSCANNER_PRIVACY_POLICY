@@ -84,6 +84,27 @@
       margin-top: 12px;
     }
     .contact-box p { color: #2d3748; margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 0.88rem;
+    }
+    table th {
+      background: #e8f0fe;
+      color: #1a73e8;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+    table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #4a5568;
+      vertical-align: top;
+    }
+    table tr:last-child td { border-bottom: none; }
+    table tr:nth-child(even) td { background: #f8faff; }
     footer {
       text-align: center;
       font-size: 0.82rem;
@@ -94,6 +115,7 @@
       .card { padding: 24px 20px; }
       .rights-grid { grid-template-columns: 1fr; }
       header h1 { font-size: 1.5rem; }
+      table { font-size: 0.78rem; }
     }
   </style>
 </head>
@@ -106,42 +128,136 @@
 
 <div class="container">
 
+  <!-- Introduction -->
   <div class="card">
     <h2>Introduction</h2>
     <p>This Privacy Policy applies to the <strong>PdfScanner</strong> app (referred to as "Application") for mobile devices, created by <strong>Vikas Awasthi</strong> (referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".</p>
     <p>By using the Application, you agree to the collection and use of information as described in this policy. We are committed to protecting your privacy and handling your data transparently and responsibly.</p>
   </div>
 
+  <!-- Data Types Collected -->
   <div class="card">
     <h2>Information Collection and Use</h2>
     <p>The Application collects the following categories of personal information when you download and use it:</p>
+
+    <h3>Device & Identity Data</h3>
     <ul>
       <li>Your device's Internet Protocol (IP) address</li>
+      <li><strong>Device ID</strong> — a unique identifier associated with your device, used for analytics and ad serving purposes</li>
+      <li><strong>Advertising ID</strong> — used by AdMob and Google AdServices to serve personalized advertisements</li>
+      <li>The operating system used on your mobile device</li>
+    </ul>
+
+    <h3>Usage & Analytics Data</h3>
+    <ul>
       <li>Pages of the Application you visit, time and date of your visit, time spent on pages</li>
       <li>Total time spent on the Application</li>
-      <li>The operating system used on your mobile device</li>
-      <li><strong>Device ID</strong> — a unique identifier associated with your device, used for analytics and ad serving purposes</li>
-      <li><strong>Advertising ID</strong> — used by AdMob to serve personalized advertisements</li>
       <li><strong>App interaction data</strong> — how you interact with the app, buttons clicked, and features used</li>
       <li><strong>Crash logs</strong> — error and crash reports collected to improve app stability</li>
       <li><strong>Coarse location</strong> — approximate location derived from your IP address, used for analytics purposes only</li>
     </ul>
-    <p>The Application does <strong>not</strong> gather precise location information about your mobile device.</p>
+
+    <h3>Files and Media Data</h3>
+    <p>When you use the app's scanning and PDF creation features, the Application accesses the following types of files stored on your device. These files are accessed only at your explicit request and are <strong>not uploaded, stored on our servers, or shared with third parties</strong>:</p>
+    <ul>
+      <li><strong>Photos</strong> — images you choose to scan or convert to PDF</li>
+      <li><strong>Videos</strong> — video files accessible via storage permissions (not actively used for any feature)</li>
+      <li><strong>Files and Documents</strong> — files you select for PDF conversion</li>
+      <li><strong>Voice or Sound Recordings / Other Audio Files / Music Files</strong> — accessible via storage permissions as part of Android's broad storage access; the app does not actively read, use, or collect audio content</li>
+    </ul>
+
+    <h3>What We Do NOT Collect</h3>
+    <p>The Application does <strong>not</strong> collect or use the following:</p>
+    <ul>
+      <li>Precise location information</li>
+      <li>Phone number</li>
+      <li>User account information or login credentials</li>
+      <li>Contacts</li>
+      <li>Text messages</li>
+      <li>Installed apps list</li>
+      <li>Health information</li>
+      <li>Sensitive personal information</li>
+    </ul>
     <p>The Application does <strong>not</strong> use Artificial Intelligence (AI) technologies to process your data.</p>
-    <p>The Application does <strong>not</strong> collect Phone Number, User Account Information, Contacts, Text Messages, Installed Apps, or Health Information.</p>
   </div>
 
+  <!-- Permissions -->
   <div class="card">
     <h2>App Permissions</h2>
-    <p>The Application requests the following permissions which are strictly necessary to provide its core document scanning and PDF creation functionality:</p>
-    <ul>
-      <li><strong>CAMERA</strong> — This permission is essential to allow users to scan physical documents directly using their device camera. Without this permission, the core scanning feature of the app cannot function. The camera is only activated when the user explicitly initiates a scan and is not used for any other purpose.</li>
-      <li><strong>READ_EXTERNAL_STORAGE</strong> — This permission is required to import existing images or files stored on your device for PDF conversion. It is used solely to allow users to select files they wish to convert and is not used to collect or transmit your files.</li>
-      <li><strong>Photo / Video Access</strong> — This permission is required to allow users to select images from their gallery for scanning and PDF creation. Access is only granted when the user actively chooses to pick an image and is not used to browse or collect your media.</li>
-    </ul>
-    <p>These permissions are used solely for the stated core app functionality. No personal data is collected beyond what is necessary for the app to work.</p>
+    <p>The Application requests the following permissions. Each is strictly necessary for core functionality:</p>
+
+    <table>
+      <tr>
+        <th>Permission</th>
+        <th>Data Type Accessed</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><strong>CAMERA</strong></td>
+        <td>Camera</td>
+        <td>To scan physical documents using your device camera. Only activated when the user explicitly starts a scan. Not used for any other purpose.</td>
+      </tr>
+      <tr>
+        <td><strong>READ_EXTERNAL_STORAGE</strong></td>
+        <td>Photos, Videos, Files, Audio</td>
+        <td>To import existing images or files from your device for PDF conversion. Only files the user explicitly selects are accessed. No files are transmitted.</td>
+      </tr>
+      <tr>
+        <td><strong>WRITE_EXTERNAL_STORAGE</strong></td>
+        <td>Photos, Videos, Files, Audio</td>
+        <td>To save generated PDF files to your device storage. Used only to write the output PDF that the user creates. No personal media is modified.</td>
+      </tr>
+      <tr>
+        <td><strong>READ_MEDIA_IMAGES</strong></td>
+        <td>Photos</td>
+        <td>To allow selection of images from your gallery on Android 13+. Only images the user explicitly selects are accessed.</td>
+      </tr>
+      <tr>
+        <td><strong>INTERNET</strong></td>
+        <td>Network</td>
+        <td>Required to load advertisements via AdMob and send anonymous crash/analytics data to improve the app.</td>
+      </tr>
+      <tr>
+        <td><strong>ACCESS_NETWORK_STATE</strong></td>
+        <td>Network status</td>
+        <td>To check network connectivity before loading ads or sending analytics data.</td>
+      </tr>
+      <tr>
+        <td><strong>FOREGROUND_SERVICE</strong></td>
+        <td>None</td>
+        <td>To keep PDF processing running in the foreground when converting large documents, so the operation is not interrupted.</td>
+      </tr>
+      <tr>
+        <td><strong>WAKE_LOCK</strong></td>
+        <td>None</td>
+        <td>To prevent the device screen from sleeping during long document scans or PDF conversions.</td>
+      </tr>
+      <tr>
+        <td><strong>AD_ID (com.google.android.gms.permission.AD_ID)</strong></td>
+        <td>Device or Other IDs</td>
+        <td>To access the Advertising ID for serving personalized ads via AdMob.</td>
+      </tr>
+      <tr>
+        <td><strong>ACCESS_ADSERVICES_AD_ID</strong></td>
+        <td>Device or Other IDs</td>
+        <td>Used by Google AdServices SDK for ad attribution and measurement on Android 13+.</td>
+      </tr>
+      <tr>
+        <td><strong>ACCESS_ADSERVICES_ATTRIBUTION</strong></td>
+        <td>Attribution data</td>
+        <td>Used by Google AdServices SDK to measure ad campaign effectiveness. No personal data is shared beyond what AdMob requires.</td>
+      </tr>
+      <tr>
+        <td><strong>ACCESS_ADSERVICES_TOPICS</strong></td>
+        <td>Interest-based topics</td>
+        <td>Used by Google AdServices SDK to serve interest-based ads using Android's Privacy Sandbox Topics API, which runs on-device and does not share browsing history with third parties.</td>
+      </tr>
+    </table>
+
+    <p>No personal data is collected through these permissions beyond what is necessary for the stated core app functionality.</p>
   </div>
 
+  <!-- Third Party -->
   <div class="card">
     <h2>Third Party Access and Data Sharing</h2>
     <p>Only aggregated, anonymized data is periodically transmitted to external services to help improve the Application. The Application uses the following third-party services which have their own Privacy Policies:</p>
@@ -153,8 +269,8 @@
     <h3>Right to Know About Data Sharing</h3>
     <p>You have the right to know whether your personal data is shared with third parties. We share your data as follows:</p>
     <ul>
-      <li><strong>Google Play Services</strong> — We share device information and app usage data for core app functionality and analytics.</li>
-      <li><strong>AdMob (Google)</strong> — We share your Advertising ID and coarse location data for the purpose of serving personalized advertisements within the app.</li>
+      <li><strong>Google Play Services</strong> — Device information and app usage data for core app functionality and analytics.</li>
+      <li><strong>AdMob / Google AdServices</strong> — Advertising ID and coarse location for personalized advertisement serving. AdServices also uses on-device Topics API for interest-based ads.</li>
       <li><strong>Legal requirements</strong> — We may share your information as required by law or to comply with legal process.</li>
       <li><strong>Safety</strong> — We may share information to protect rights, safety, or investigate fraud.</li>
     </ul>
@@ -164,6 +280,7 @@
     <p>You may contact us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a> at any time to request a full disclosure of what personal data we have shared and with whom.</p>
   </div>
 
+  <!-- Opt-Out -->
   <div class="card">
     <h2>Opt-Out Rights</h2>
     <p>You have the right to opt-out of the sharing or selling of your personal data and targeted advertising. You can exercise this right in the following ways:</p>
@@ -176,7 +293,7 @@
       <li>We will process your request and confirm within 30 days</li>
     </ol>
 
-    <h3>Option 2 — Opt Out of Personalized Ads (AdMob)</h3>
+    <h3>Option 2 — Opt Out of Personalized Ads on Android</h3>
     <ol>
       <li>Open your Android device <strong>Settings</strong></li>
       <li>Go to <strong>Google &gt; Ads</strong></li>
@@ -187,11 +304,13 @@
     <p>You can stop all collection of information by uninstalling the Application using the standard uninstall process on your mobile device or via the Google Play Store. This will immediately stop all data collection.</p>
   </div>
 
+  <!-- Retention -->
   <div class="card">
     <h2>Data Retention Policy</h2>
     <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you would like us to delete your data, please contact us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a> and we will respond within a reasonable time.</p>
   </div>
 
+  <!-- GDPR -->
   <div class="card">
     <span class="badge">GDPR — European Union Users</span>
     <h2>Your Rights Under GDPR</h2>
@@ -225,12 +344,13 @@
     <p>You have the right to lodge a complaint with your local data protection supervisory authority if you believe your rights under GDPR have been violated. A list of EU supervisory authorities can be found at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank">edpb.europa.eu</a>.</p>
   </div>
 
+  <!-- CCPA -->
   <div class="card">
     <span class="badge">CCPA — California Users</span>
     <h2>Your Rights Under CCPA</h2>
     <p>If you are a resident of California, the California Consumer Privacy Act (CCPA) grants you the following rights:</p>
     <ul>
-      <li><strong>Right to Know</strong> — You have the right to know what personal information we collect, use, disclose, and share. You may also request to know whether your data is being shared with third parties and the identity of those third parties.</li>
+      <li><strong>Right to Know</strong> — You have the right to know what personal information we collect, use, disclose, and share, including whether your data is shared with third parties and the identity of those third parties.</li>
       <li><strong>Right to Delete</strong> — You may request deletion of personal information we have collected about you.</li>
       <li><strong>Right to Correct</strong> — You may request correction of inaccurate personal information.</li>
       <li><strong>Right to Opt-Out of Sale</strong> — You have the right to opt-out of the sale of your personal information.</li>
@@ -239,16 +359,16 @@
     <h3>Do We Sell Personal Data?</h3>
     <p>We do <strong>not sell</strong> your personal information to third parties. Aggregated and anonymized data may be shared with analytics and advertising partners (such as AdMob) for app improvement and ad serving, but this does not constitute a "sale" under CCPA.</p>
     <h3>Do We Share Personal Data?</h3>
-    <p>Yes. We share limited data with third-party service providers (Google Play Services, AdMob) solely for operational purposes as described in the "Third Party Access and Data Sharing" section above. You have the right to know about this sharing.</p>
+    <p>Yes. We share limited data with third-party service providers (Google Play Services, AdMob, Google AdServices) solely for operational purposes as described in the "Third Party Access and Data Sharing" section above. You have the right to know about this sharing.</p>
     <h3>How to Opt-Out of Data Sharing or Targeted Advertising</h3>
-    <p>To opt-out of data sharing or targeted advertising, you may use any of these methods:</p>
     <ol>
       <li>Email us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a> with subject line <strong>"Opt-Out Request"</strong></li>
-      <li>Go to your Android Settings &gt; Google &gt; Ads &gt; Enable "Opt out of Ads Personalization"</li>
+      <li>Go to Android Settings &gt; Google &gt; Ads &gt; Enable "Opt out of Ads Personalization"</li>
       <li>Uninstall the Application to stop all data collection immediately</li>
     </ol>
   </div>
 
+  <!-- LGPD -->
   <div class="card">
     <span class="badge">LGPD — Brazil Users</span>
     <h2>Your Rights Under LGPD</h2>
@@ -266,6 +386,7 @@
     <p>To exercise these rights, contact us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a>.</p>
   </div>
 
+  <!-- VCDPA -->
   <div class="card">
     <span class="badge">VCDPA — Virginia Users</span>
     <h2>Your Rights Under VCDPA</h2>
@@ -280,6 +401,7 @@
     <p>To exercise these rights, contact us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a>.</p>
   </div>
 
+  <!-- Children -->
   <div class="card">
     <h2>Children's Privacy</h2>
     <p>The Application is not directed to children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided personal information, we will immediately delete it.</p>
@@ -297,7 +419,7 @@
     <p>The Application does not contain any features that allow children to make their personal information publicly visible to others.</p>
 
     <h3>Caregiver Rights</h3>
-    <p>If you are a parent or legal guardian of a child under 13, you have the following rights regarding your child's personal information:</p>
+    <p>If you are a parent or legal guardian of a child under 13, you have the following rights:</p>
     <ul>
       <li><strong>Right to Review</strong> — You have the right to review any personal information we may have collected from your child.</li>
       <li><strong>Right to Delete</strong> — You have the right to request the deletion of your child's personal information from our records.</li>
@@ -305,7 +427,6 @@
     </ul>
 
     <h3>How Caregivers Can Exercise These Rights</h3>
-    <p>To review, delete, or stop the collection of your child's personal information:</p>
     <ol>
       <li>Email us at <a href="mailto:vikasawasthi717@gmail.com">vikasawasthi717@gmail.com</a></li>
       <li>Use the subject line: <strong>"Child Data Request"</strong></li>
@@ -314,17 +435,20 @@
     </ol>
   </div>
 
+  <!-- Security -->
   <div class="card">
     <h2>Security</h2>
     <p>We are committed to safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect the information we process and maintain. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
   </div>
 
+  <!-- Changes -->
   <div class="card">
     <h2>Changes to This Privacy Policy</h2>
     <p>This Privacy Policy may be updated from time to time. We will notify you of any changes by updating this page with the new Privacy Policy. You are advised to consult this page regularly for any changes, as continued use of the Application is deemed approval of all changes.</p>
     <p><strong>Effective as of:</strong> March 18, 2026</p>
   </div>
 
+  <!-- Contact -->
   <div class="card">
     <h2>Contact Us</h2>
     <p>If you have any questions or concerns regarding this Privacy Policy, please contact:</p>
